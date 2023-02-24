@@ -87,7 +87,7 @@ function Technology() {
             image: 'Images/React.png'
         },
         {
-            image: 'Images/JavaScript.png'
+            image: 'Images/Javascript.png'
         }
     ]
     const classes = useStyles()
