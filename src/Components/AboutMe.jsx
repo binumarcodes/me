@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme)=>({
         display:'flex',
         color: theme.palette.primary.main,
         fontSize:'1.5rem',
-        fontWeight: 100,
+        fontWeight: 300,
         cursor: 'pointer'
     },
     GridContainer:{
@@ -115,10 +115,10 @@ function AboutMe() {
                         <Typography variant='h6'className={classes.h6} style = {{display:'flex', alignItems:'center'}}> About Me!<span style = {{height:'3rem'}}><img src="Images/memoji2 1.png"  style = {{height:'3rem', paddingLeft:'.5rem'}}alt="" srcset="" /></span></Typography>
                         <Typography variant='h1'className={classes.h1}> Ibrahim Aliyu</Typography>
                         <List>
-                            <ListItem className={classes.ListItem}> <span style = {{height:'30px'}}><img src="Images/wave.png" style = {{height:'3rem', paddingRight:'.5rem'}} alt="" srcset="" /></span> My name is Ibrahim Aliyu, but you can call me just Ibrahim. Nice to meet you!</ListItem>
-                            <ListItem className={classes.ListItem}> <span style = {{height:'30px'}}><img src="Images/technologist.png" style = {{height:'3rem', paddingRight:'.5rem'}} alt="" srcset="" /></span>I have over 2 Years of experience in developing and programming interfaces with JavaScript, React JS, CSS and Material-Ui</ListItem>
-                            <ListItem className={classes.ListItem}><span style = {{height:'30px'}}><img src="Images/graduation-cap.png" style = {{height:'3rem', paddingRight:'.5rem'}} alt="" srcset="" /></span> Studying Information Technology in Bayero University, Kano, Nigeria.</ListItem>
-                            <ListItem className={classes.ListItem}><span style = {{height:'30px'}}><img src="Images/interest.png" style = {{height:'3rem', paddingRight:'.5rem'}} alt="" srcset="" /></span>Interested in front-end development with React JS, Material-Ui and UX/UI Design.</ListItem>
+                            <ListItem className={classes.ListItem}> <span style = {{height:'30px'}}><img src="Images/wave.png" style = {{height:'3rem', paddingRight:'.5rem'}} alt="" srcset="" /></span> My name is Ibrahim Aliyu, but you can call me just 'Iro' or 'Ibro'. Nice to meet you!</ListItem>
+                            <ListItem className={classes.ListItem}> <span style = {{height:'30px'}}><img src="Images/technologist.png" style = {{height:'3rem', paddingRight:'.5rem'}} alt="" srcset="" /></span>With more than 2 years of experience, I have developed and programmed interfaces using JavaScript, React JS, CSS, and Material-Ui.</ListItem>
+                            <ListItem className={classes.ListItem}><span style = {{height:'30px'}}><img src="Images/graduation-cap.png" style = {{height:'3rem', paddingRight:'.5rem'}} alt="" srcset="" /></span> I am currently enrolled in Bayero University, Kano, Nigeria, studying Information Technology.</ListItem>
+                            <ListItem className={classes.ListItem}><span style = {{height:'30px'}}><img src="Images/interest.png" style = {{height:'3rem', paddingRight:'.5rem'}} alt="" srcset="" /></span>I'm interested in front-end development with React JS and Material-Ui, and I also dabble in graphic design.</ListItem>
                             <ListItem className={classes.ListItem}><span style = {{height:'30px'}}><img src="Images/light-bulb.png" style = {{height:'3rem', paddingRight:'.5rem'}} alt="" srcset="" /></span> Trying to be a little better than yesterday every day.</ListItem>
                         </List>
 
