@@ -161,6 +161,7 @@ return (
                         <Button variant='outlined'className={classes.button}>Ongoing</Button>
                         <Button variant='outlined'className={classes.button}>Complete</Button>
                     </div>
+                    //commented out
                 </Grid> */}
             </Grid>
             <Grid container className={classes.GridContainer} md = {12} spacing = {2}>
