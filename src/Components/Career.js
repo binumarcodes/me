@@ -114,7 +114,7 @@ function Career() {
     const classes = useStyles()
   return (
     <section className={classes.section}>
-            <Typography variant='h6'className={classes.h6} style = {{margin: 'auto', display: 'flex', alignItems: 'center'}}>Career!<span><img src="/Images/technologist.png"  style = {{height:'3rem', paddingLeft:'.5rem'}}alt="" srcset="" /></span></Typography>
+            <Typography variant='h6'className={classes.h6} style = {{margin: 'auto', display: 'flex', alignItems: 'center'}}>Career!<span><img src="Images/technologist.png"  style = {{height:'3rem', paddingLeft:'.5rem'}}alt="" srcset="" /></span></Typography>
             <Typography variant='h1' className={classes.h1}>Current Path</Typography>
         <Container className={classes.CareerContainer}>
             <Grid container md  = {12} spacing = {4}>

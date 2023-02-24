@@ -151,7 +151,7 @@ return (
             <Grid container className={classes.GridContainer}>
                 <Grid item>
                     <div className={classes.brief}>
-                        <Typography variant='h6'className={classes.h6} style = {{display:'flex', alignItems:'center'}}>Portfolio!<span><img src="/Images/smiley.png"  style = {{height:'3rem',display: 'flex', alignItems: 'center', paddingLeft:'.5rem'}}alt="" srcset="" /></span></Typography>
+                        <Typography variant='h6'className={classes.h6} style = {{display:'flex', alignItems:'center'}}>Portfolio!<span><img src="Images/smiley.png"  style = {{height:'3rem',display: 'flex', alignItems: 'center', paddingLeft:'.5rem'}}alt="" srcset="" /></span></Typography>
                         <Typography variant='h1'className={classes.h1}>Work and Projects</Typography>
                     </div>
                 </Grid>
