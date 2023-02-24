@@ -192,7 +192,7 @@ const classes = useStyles()
     <body className={classes.body} id = 'HeroSection'>
         <Container className={classes.HeroSection}>
             <div className={classes.brief}>
-                <Typography variant='h6'className={classes.h6} style = {{display:'flex', alignItems:'center'}}> Greetings!<span style = {{height:'3rem'}}><img src="/Images/wave.png"  style = {{height:'3rem', paddingLeft:'.5rem'}}alt="" srcset="" /></span></Typography>
+                <Typography variant='h6'className={classes.h6} style = {{display:'flex', alignItems:'center'}}> Greetings!<span style = {{height:'3rem'}}><img src="Images/wave.png"  style = {{height:'3rem', paddingLeft:'.5rem'}}alt="" srcset="" /></span></Typography>
                 <Typography variant='h1'className={classes.h1}> Ibrahim Aliyu</Typography>
                 <div className={classes.track}>
                     <span className={classes.menuItem}>Front-End Developer</span>
@@ -227,7 +227,7 @@ const classes = useStyles()
                                         <Grid item md = {3} sm = {6} xs = {24} >
                                             <Card className = {classes.card}>
                                                 <CardActionArea>
-                                                    <img src="/Images/CodeIcon.svg" alt="" srcset="" className={classes.CardIcon} />
+                                                    <img src="Images/CodeIcon.svg" alt="" srcset="" className={classes.CardIcon} />
                                                     <CardContent>
                                                         <Typography variant='body1' className={classes.p} color ='primary'>2 Years Experience</Typography>
                                                         <Typography variant='h2' className={classes.h2} color ='primary'>Programmer</Typography>
@@ -240,7 +240,7 @@ const classes = useStyles()
                                         <Grid item md = {3} sm = {6}  >
                                             <Card className = {classes.card} sm = {12}>
                                                 <CardActionArea>
-                                                    <img src="/Images/DesignIcon.svg" alt="" srcset="" className={classes.CardIcon} />
+                                                    <img src="Images/DesignIcon.svg" alt="" srcset="" className={classes.CardIcon} />
                                                     <CardContent>
                                                         <Typography variant='body1' className={classes.p} color ='primary'>1/2 Years Experience</Typography>
                                                         <Typography variant='h2' className={classes.h2} color ='primary'>Designer</Typography>
@@ -253,7 +253,7 @@ const classes = useStyles()
                                         <Grid item md = {3} sm = {6} >
                                             <Card className = {classes.card}>
                                                 <CardActionArea>
-                                                    <img src="/Images/ProjectsIcon.svg" alt="" srcset="" className={classes.CardIcon} />
+                                                    <img src="Images/ProjectsIcon.svg" alt="" srcset="" className={classes.CardIcon} />
                                                     <CardContent>
                                                         <Typography variant='body1' className={classes.p} color ='primary'>1 Year Experience</Typography>
                                                         <Typography variant='h2' className={classes.h2} color ='primary'>Working</Typography>

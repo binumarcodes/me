@@ -72,22 +72,22 @@ const useStyles = makeStyles((theme)=>({
 function Technology() {
     const icons = [
         {
-            image: '/Images/Figma.png'
+            image: 'Images/Figma.png'
         },
         {
-            image: '/Images/Github.png'
+            image: 'Images/Github.png'
         },
         {
-            image: '/Images/mui.png'
+            image: 'Images/mui.png'
         },
         {
-            image: '/Images/HTML5.png'
+            image: 'Images/HTML5.png'
         },
         {
-            image: '/Images/React.png'
+            image: 'Images/React.png'
         },
         {
-            image: '/Images/JavaScript.png'
+            image: 'Images/JavaScript.png'
         }
     ]
     const classes = useStyles()
@@ -99,7 +99,7 @@ function Technology() {
                     <Container className={classes.containerMulitple}>
                         <Container className={classes.containerMulitple}>
                             <div className={classes.brief}>
-                                <Typography variant='h6'className={classes.h6} style = {{display:'flex', alignItems:'center'}}>Skills<span style = {{height:'3rem'}}><img src="/Images/smiley.png"  style = {{height:'3rem', paddingLeft:'.5rem'}}alt="" srcset="" /></span></Typography>
+                                <Typography variant='h6'className={classes.h6} style = {{display:'flex', alignItems:'center'}}>Skills<span style = {{height:'3rem'}}><img src="Images/smiley.png"  style = {{height:'3rem', paddingLeft:'.5rem'}}alt="" srcset="" /></span></Typography>
                                 <Typography variant='h1'className={classes.h1}>Technologies That I Use</Typography>
                             </div>
                             <div className={classes.icons}>
