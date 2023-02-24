@@ -14,7 +14,7 @@ html{
   animation: fade 0.5s ease-in-out;
 }
 
-#popup {
+/* #popup {
   position: fixed;
   bottom: 8%;
   left: 59%;
@@ -47,7 +47,7 @@ html{
 #popuphero.show {
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
-}
+} */
 @keyframes fade {
   from {
     opacity: 0;
