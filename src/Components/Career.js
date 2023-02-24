@@ -104,7 +104,7 @@ const academic = [
     },
     {
         header: 'Future Leaders International School',
-        subheader: "I graduated high-school from future leaders international school. I'd like to think i was a good student. atlease above average. haha!",
+        subheader: "I graduated high-school from future leaders international school. I'd like to think i was a good student. atleast above average. haha!",
         Duration: '5 Years',
         timeframe: 'September 2013 - August 2018'
        
