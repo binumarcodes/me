@@ -89,10 +89,8 @@ const copyText = () =>{
     let popup = document.getElementById("popup");
     (navigator.clipboard.writeText(toBeCopied));
     popup.style.display = 'block'
-    popup.classList.add('show');
     setTimeout(()=>{
         popup.style.display = 'none'
-        popup.classList.remove('show');
     }, 1000)
 }
 const classes = useStyles()
