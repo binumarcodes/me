@@ -68,10 +68,11 @@ const useStyles = makeStyles((theme)=>({
         display:'flex',
         alignItems: 'center',
         color:'rgba(255, 255, 255, 0.5)',
-        fontSize:'1.5rem',
+        fontSize:'1.25rem',
         fontWeight: 200,
         cursor: 'pointer',
-        margin: '2rem 0'
+        margin: '2rem 0',
+        
     },
     menuItem:{
         // color: 'white',
