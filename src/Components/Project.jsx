@@ -126,7 +126,7 @@ function Project() {
         name: 'primetech-solutions.com',
         description: 'PrimeTech is a design and engineering company with inherited experience, working in Nigeria for over decades. It provides reliable, innovative and efficient solutions for the construction of buildings, industries, civil structures, bridges, roads and infrastructure.',
         image: 'Images/primetech-shot.png',
-        link: 'https://primetech-solution.com',
+        link: 'https://primetech-solutions.com',
         technologyused: ['REACTJS', 'CSS']
     },
     {
