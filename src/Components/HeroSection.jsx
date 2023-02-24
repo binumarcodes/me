@@ -217,7 +217,7 @@ const classes = useStyles()
                     <span className={classes.menuItem}>Graphic Designer</span>
                 </div>
                 <div className={classes.social} >
-                <Typography variant='body1'className={classes.p} id = 'popup' color='primary' style={{display: 'none', transition: 'all ease-in-out .2s', padding: '0.5rem 0rem'}}>Sorry, I am currently not active on socials!</Typography>
+                <Typography variant='body1'className={classes.p} id = 'popup' color='primary' style={{display: 'none', transition: 'all ease-in-out .2s', padding: '0.5rem 0rem', fontSize: '1rem'}}>Sorry, I am currently not active on socials!</Typography>
                     <a href="https://github.com/Ibrvheem" target= '_blank'><GitHub className={classes.icon} /></a>
                     <a href="https://www.linkedin.com/in/ibrahim-aliyu-96209a225/" target= '_blank'><LinkedIn className={classes.icon} /></a>
                     <Instagram className={classes.icon} onClick = {popup} />
