@@ -25,6 +25,11 @@ const useStyles = makeStyles((theme)=>({
             flexDirection: 'column-reverse'
     }
     },
+    link:{
+        textDecoration:'none',
+        color:theme.palette.secondary.light,
+        fontWeight: 400
+    },
     memoji:{
         [theme.breakpoints.down('sm')]: {
             margin: '3rem 0rem',
@@ -64,7 +69,7 @@ const useStyles = makeStyles((theme)=>({
         alignItems: 'center',
         color:'rgba(255, 255, 255, 0.5)',
         fontSize:'1.5rem',
-        fontWeight: 100,
+        fontWeight: 200,
         cursor: 'pointer',
         margin: '2rem 0'
     },
@@ -89,7 +94,7 @@ const useStyles = makeStyles((theme)=>({
     },
     p:{
         fontSize:'1.5rem',
-        fontWeight: 100,
+        fontWeight: 200,
         cursor: 'pointer'
 
 
@@ -197,7 +202,7 @@ const classes = useStyles()
                 <div className={classes.track}>
                     <span className={classes.menuItem}>Front-End Developer</span>
                     <span className={classes.dot}></span>
-                    <span className={classes.menuItem}>UI Designer</span>
+                    <span className={classes.menuItem}>Graphic Designer</span>
                 </div>
                 <div className={classes.social}>
                     <GitHub className={classes.icon}/>
@@ -212,8 +217,8 @@ const classes = useStyles()
 
             </div>
             <div className={classes.downloadCv}>
-                <Button variant='text'className={classes.p} color = 'primary' endIcon = {<CloudDownloadOutlined/>}> Download CV</Button>
-                <Button variant='outlined'className={classes.whatsAppBtn} startIcon = {<WhatsApp/>} style = {{borderRadius:'1rem'}}> LETS HAVE A CONVERSATION</Button>
+                <Button variant='text'className={classes.p} color = 'primary' endIcon = {<CloudDownloadOutlined/>}><a href='https://docs.google.com/document/d/1TBuERb0co-Q2mjCRiWKKwaiP0mP-xzM2-J_n3iO9mh0/edit?usp=sharing' className={classes.link} target='_blank'> Download CV</a></Button>
+                <Button variant='outlined'className={classes.whatsAppBtn} startIcon = {<WhatsApp/>} style = {{borderRadius:'1rem'}}> <a href = 'https://wa.me/2348163089308' target= '_blank' className={classes.link}>LETS HAVE A CONVERSATION</a></Button>
             </div>
         </Container>
         <section className={classes.section}>
@@ -277,7 +282,7 @@ const classes = useStyles()
                                         </Grid>
                                         <Grid item md = {3}>
                                             <Typography variant='body1' style={{color:'#7B4AE2'}} className={classes.p}>A Free Lance Designer</Typography>
-                                            <Typography variant='h2' style={{color:'#7B4AE2'}} className={classes.h2}> UI</Typography>
+                                            <Typography variant='h2' style={{color:'#7B4AE2'}} className={classes.h2}> GRAPHICS</Typography>
 
                                         </Grid>
                                     </Grid>

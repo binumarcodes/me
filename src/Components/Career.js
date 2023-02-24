@@ -65,7 +65,8 @@ const useStyles = makeStyles((theme)=>({
     CardSubheader:{
         paddingTop: '2rem',
         color:'rgba(255, 255, 255, 0.5)',
-        fontSize:'1.2rem',
+        fontSize:'1.3rem',
+        fontWeight: 200,
         textAlign:'left'
         
     },
@@ -82,13 +83,13 @@ const useStyles = makeStyles((theme)=>({
 const Professional = [
     {
         header: 'Frontend developer at iT Central',
-        subheader: 'I develop websites and web applications using Vanilla Javascript and React JS, alongside technologies such as Redux and Material-UI to enhance the user experience.',
+        subheader: 'I create web-based applications and websites using both Vanilla Javascript and React JS, and I utilize tools like Redux and Material-UI to improve the user interface and experience.',
         Duration: '3 months +',
         timeframe: 'September 2022 - Date'
     },
     {
         header: 'Frontend developer at Schoola',
-        subheader: "I developed Schoola's main website which was developed using frontend tools and libraries, that helped create a user-friendly interface and improve the overall user experience.",
+        subheader: "I was responsible for developing Schoola's primary website using various frontend tools and libraries to create a user-friendly interface that enhanced the overall user experience.",
         Duration: '5 months',
         timeframe: 'May - October 2022'
     },
@@ -96,14 +97,14 @@ const Professional = [
 const academic = [
     {
         header: 'Bayero University Kano',
-        subheader: 'Currently, I am enrolled in the Faculty of Computing, where I am majoring in Information Technology.',
+        subheader: "I am currently pursuing a major in Information Technology at Bayero University Kano's Faculty of Computing.",
         Duration: '4 Years',
-        timeframe: 'March 2018 - Date'
+        timeframe: 'September 2018 - Date'
       
     },
     {
         header: 'Future Leaders International School',
-        subheader: 'I really dont know why i am adding this here, just to fill up space i guess. But this is actually the school i finished from',
+        subheader: "I graduated high-school from future leaders international school. I'd like to think i was a good student. atlease above average. haha!",
         Duration: '5 Years',
         timeframe: 'September 2013 - August 2018'
        
