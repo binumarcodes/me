@@ -7,12 +7,19 @@ const useStyles = makeStyles((theme)=>({
     AppBar:{
         backgroundColor:'transparent',
         marginTop: '3rem',
+        [theme.breakpoints.down('sm')]: {
+            margin: '0'
+    },
+
     },
     navbar:{
         backgroundColor: "rgba(123, 74, 226, 0.05)",
         borderRadius: '1.8rem',
         display:"flex",
-        justifyContent:'space-between'
+        justifyContent:'space-between',
+        [theme.breakpoints.down('xs')]: {
+            display: 'none'
+    },
 
     },
    
@@ -63,7 +70,7 @@ const classes = useStyles()
                     <img src='/Images/Logo.svg' alt="" srcset="" />
                 </div>
                 <List className={classes.menu}>
-                    <ListItem className={classes.menuItem}>Home</ListItem>
+                    <ListItem className={classes.menuItem}><a href="#HeroSection" className={classes.link}>Home</a></ListItem>
                     <ListItem className={classes.menuItem}><a href = '#AboutSection' className={classes.link}>About Me</a></ListItem>
                     <ListItem className={classes.menuItem}>Projects</ListItem>
                     <ListItem className={classes.menuItem}>Skills</ListItem>

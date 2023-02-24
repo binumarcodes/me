@@ -3,6 +3,10 @@ import { createMuiTheme, ThemeProvider } from '@material-ui/core';
 import HeroSection from './Components/HeroSection';
 import Navbar from './Components/Navbar';
 import AboutMe from './Components/AboutMe';
+import Project from './Components/Project';
+import Technology from './Components/Technology';
+import Career from './Components/Career';
+import Contact from './Components/Contact';
 
 
 const theme = createMuiTheme({
@@ -31,6 +35,10 @@ function App() {
         <Navbar/>
         <HeroSection/>
         <AboutMe/>
+        <Project/>
+        <Technology/>
+        <Career/>
+        <Contact/>
       </div>
 
     </ThemeProvider>
