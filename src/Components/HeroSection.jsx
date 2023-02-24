@@ -8,12 +8,43 @@ const useStyles = makeStyles((theme)=>({
         paddingTop:'10rem',
         backgroundColor: theme.palette.secondary.main,
         height: 'auto',
+        [theme.breakpoints.down('sm')]: {
+            paddingTop: '5rem'
+    },
+
+
     },
     HeroSection:{
         height: "100%",
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        [theme.breakpoints.down('xs')]: {
+            position: 'relative',
+            display: 'flex',
+            flexDirection: 'column-reverse'
+    }
+    },
+    memoji:{
+        [theme.breakpoints.down('sm')]: {
+            margin: '3rem 0rem',
+    },
+
+    },
+    brief:{
+        [theme.breakpoints.down('sm')]: {
+            display: 'flex',
+            flexDirection: 'column'
+    },
+
+    },
+    downloadCv:{
+        display: 'flex',
+        [theme.breakpoints.down('sm')]: {
+            position: 'absolute',
+            bottom: '-110px'
+    },
+
     },
     h6:{
         backgroundColor: "rgba(123, 74, 226, 0.05)",
@@ -79,10 +110,17 @@ const useStyles = makeStyles((theme)=>({
         marginRight: '2rem',
     },
     social:{
-        textAlign: 'left'
+        textAlign: 'left',
+        [theme.breakpoints.down('xs')]: {
+            position: 'absolute',
+            top: "0",
+            left: '30%',
+        },
+
     },
     card:{
         // height: '20rem',
+        width: '100%',
         padding: '2rem',
         backgroundColor:'transparent',
         border: '1px solid',
@@ -91,7 +129,11 @@ const useStyles = makeStyles((theme)=>({
         '&:hover':{
             backgroundColor: "rgba(123, 74, 226, 0.05)",
             transition: 'all ease-in-out .2s'
-        }
+        },
+        [theme.breakpoints.down('sm')]: {
+            width: '90vw'
+    },
+
     },
     SectionContainer:{
         display: 'flex',
@@ -109,7 +151,13 @@ const useStyles = makeStyles((theme)=>({
     gridcontainer:{
         display: 'flex',
         justifyContent: 'space-between',
-        gap: '2rem'
+        gap: '2rem',
+        [theme.breakpoints.down('sm')]: {
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+    },
+
     },
     gridcontainer2:{
         // width: '70%',
@@ -121,44 +169,30 @@ const useStyles = makeStyles((theme)=>({
         alignItems: 'center',
         gap: '2rem',
         backgroundColor: "rgba(123, 74, 226, 0.05)",
+        [theme.breakpoints.down('sm')]: {
+            display: 'none'
+    },
+
+    },
+    containerMultiple:{
+        [theme.breakpoints.down('sm')]: {
+            paddingLeft: 0,
+            paddingRight: 0, 
+    },
+
     }
 
 
 
 }))
 function HeroSection() {
-    const [currentImage, setCurrentImage] = useState('/Images/Memoji.png');
-    const [isAnimating, setIsAnimating] = useState(false);
   
-    useEffect(() => {
-        const handleScroll = () => {
-          if (isAnimating) return;
-    
-          setIsAnimating(true);
-    
-          if (window.scrollY > 50) {
-            setTimeout(() => {
-              setCurrentImage('/Images/AnotherImage.png');
-              setIsAnimating(false);
-            }, 500);
-          } else {
-            setTimeout(() => {
-              setCurrentImage('/Images/Memoji.png');
-              setIsAnimating(false);
-            }, 500);
-          }
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-      }, [isAnimating]);
-    
-    const classes = useStyles()
+const classes = useStyles()
   return (
-    <body className={classes.body}>
+    <body className={classes.body} id = 'HeroSection'>
         <Container className={classes.HeroSection}>
             <div className={classes.brief}>
-                <Typography variant='h6'className={classes.h6} style = {{display:'flex', alignItems:'center'}}> Greetings!<span><img src="/Images/wave.png"  style = {{height:'2rem', paddingLeft:'.5rem'}}alt="" srcset="" /></span></Typography>
+                <Typography variant='h6'className={classes.h6} style = {{display:'flex', alignItems:'center'}}> Greetings!<span style = {{height:'3rem'}}><img src="/Images/wave.png"  style = {{height:'3rem', paddingLeft:'.5rem'}}alt="" srcset="" /></span></Typography>
                 <Typography variant='h1'className={classes.h1}> Ibrahim Aliyu</Typography>
                 <div className={classes.track}>
                     <span className={classes.menuItem}>Front-End Developer</span>
@@ -173,8 +207,8 @@ function HeroSection() {
                 </div>
 
             </div>
-            <div className={classes.memeoji}>
-            <img src={currentImage} className={`${classes.image} ${isAnimating ? 'transition' : ''}`} alt="" srcset="" />
+            <div className={classes.memoji}>
+            <img src = 'Images/memoji.png' className={classes.image} alt="" srcset="" />
 
             </div>
             <div className={classes.downloadCv}>
@@ -183,14 +217,14 @@ function HeroSection() {
             </div>
         </Container>
         <section className={classes.section}>
-            <Container>
-                <Container>
-                    <Container>
-                        <Container>
-                            <Container>
-                                <Container>
-                                    <Grid container md= {12} className = {classes.gridcontainer}>
-                                        <Grid item md = {3}>
+            <Container className={classes.containerMultiple}>
+                <Container className={classes.containerMultiple}>
+                    <Container className={classes.containerMultiple}>
+                        <Container className={classes.containerMultiple}>
+                            <Container className={classes.containerMultiple}>
+                                <Container className={classes.containerMultiple}>
+                                    <Grid container md= {12} xs = {12} className = {classes.gridcontainer}>
+                                        <Grid item md = {3} sm = {6} xs = {24} >
                                             <Card className = {classes.card}>
                                                 <CardActionArea>
                                                     <img src="/Images/CodeIcon.svg" alt="" srcset="" className={classes.CardIcon} />
@@ -203,7 +237,20 @@ function HeroSection() {
                                             </Card>
 
                                         </Grid>
-                                        <Grid item md = {3}>
+                                        <Grid item md = {3} sm = {6}  >
+                                            <Card className = {classes.card} sm = {12}>
+                                                <CardActionArea>
+                                                    <img src="/Images/DesignIcon.svg" alt="" srcset="" className={classes.CardIcon} />
+                                                    <CardContent>
+                                                        <Typography variant='body1' className={classes.p} color ='primary'>1/2 Years Experience</Typography>
+                                                        <Typography variant='h2' className={classes.h2} color ='primary'>Designer</Typography>
+
+                                                    </CardContent>
+                                                </CardActionArea>
+                                            </Card>
+
+                                        </Grid>
+                                        <Grid item md = {3} sm = {6} >
                                             <Card className = {classes.card}>
                                                 <CardActionArea>
                                                     <img src="/Images/ProjectsIcon.svg" alt="" srcset="" className={classes.CardIcon} />
@@ -214,17 +261,7 @@ function HeroSection() {
                                                     </CardContent>
                                                 </CardActionArea>
                                             </Card>
-                                        </Grid>
-                                        <Grid item md = {3}>
-                                            <Card className = {classes.card}>
-                                                <CardActionArea>
-                                                    <img src="/Images/DesignIcon.svg" alt="" srcset="" className={classes.CardIcon} />
-                                                    <CardContent>
-                                                        <Typography variant='body1' className={classes.p} color ='primary'>1/2 Years Experience</Typography>
-                                                        <Typography variant='h2' className={classes.h2} color ='primary'>Designer</Typography>
-                                                    </CardContent>
-                                                </CardActionArea>
-                                            </Card>
+
                                         </Grid>
                                     </Grid>
                             
