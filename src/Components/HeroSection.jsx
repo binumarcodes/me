@@ -193,17 +193,15 @@ const useStyles = makeStyles((theme)=>({
 }))
 function HeroSection() {
 
-    // const popup = () =>{
-    //     let toBeCopied = document.querySelector('#email').innerHTML;
-    //     let popup = document.getElementById("popuphero");
-    //     (navigator.clipboard.writeText(toBeCopied));
-    //     popup.style.display = 'block'
-    //     popup.classList.add('show');
-    //     setTimeout(()=>{
-    //         popup.style.display = 'none'
-    //         popup.classList.remove('show');
-    //     }, 2000)
-    // }
+    const popup = () =>{
+        let toBeCopied = document.querySelector('#email').innerHTML;
+        let popup = document.getElementById("popup");
+        (navigator.clipboard.writeText(toBeCopied));
+        popup.style.display = 'block'
+        setTimeout(()=>{
+            popup.style.display = 'none'
+        }, 1500)
+    }
     
   
 const classes = useStyles()
@@ -218,11 +216,12 @@ const classes = useStyles()
                     <span className={classes.dot}></span>
                     <span className={classes.menuItem}>Graphic Designer</span>
                 </div>
-                <div className={classes.social}>
-                    <GitHub className={classes.icon} />
-                    <LinkedIn className={classes.icon} />
-                    <Instagram className={classes.icon} />
-                    <Twitter className={classes.icon} />
+                <div className={classes.social} >
+                <Typography variant='body1'className={classes.p} id = 'popup' color='primary' style={{display: 'none', transition: 'all ease-in-out .2s', padding: '0.5rem 0rem'}}>Sorry, I am currently not active on socials!</Typography>
+                    <a href="https://github.com/Ibrvheem" target= '_blank'><GitHub className={classes.icon} /></a>
+                    <a href="https://www.linkedin.com/in/ibrahim-aliyu-96209a225/" target= '_blank'><LinkedIn className={classes.icon} /></a>
+                    <Instagram className={classes.icon} onClick = {popup} />
+                    <Twitter className={classes.icon} onClick = {popup}/>
                 </div>
 
             </div>
