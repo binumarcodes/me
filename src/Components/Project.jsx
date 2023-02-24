@@ -76,7 +76,7 @@ const useStyles = makeStyles((theme)=>({
     },
     ProjectCard:{
         background: 'transparent',
-        height:'45vh',
+        height:'100%',
         border: '1px solid',
         borderColor: "rgba(123, 74, 226, 0.5)",
         color: 'white',
