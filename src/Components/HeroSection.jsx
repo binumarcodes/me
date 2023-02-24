@@ -192,17 +192,17 @@ const useStyles = makeStyles((theme)=>({
 }))
 function HeroSection() {
 
-    const popup = () =>{
-        let toBeCopied = document.querySelector('#email').innerHTML;
-        let popup = document.getElementById("popuphero");
-        (navigator.clipboard.writeText(toBeCopied));
-        popup.style.display = 'block'
-        popup.classList.add('show');
-        setTimeout(()=>{
-            popup.style.display = 'none'
-            popup.classList.remove('show');
-        }, 2000)
-    }
+    // const popup = () =>{
+    //     let toBeCopied = document.querySelector('#email').innerHTML;
+    //     let popup = document.getElementById("popuphero");
+    //     (navigator.clipboard.writeText(toBeCopied));
+    //     popup.style.display = 'block'
+    //     popup.classList.add('show');
+    //     setTimeout(()=>{
+    //         popup.style.display = 'none'
+    //         popup.classList.remove('show');
+    //     }, 2000)
+    // }
     
   
 const classes = useStyles()
@@ -220,9 +220,9 @@ const classes = useStyles()
                 <div className={classes.social}>
                 <Typography variant='body1'className={classes.p} id = 'popuphero' style={{display: 'none', transition: 'all ease-in-out .2s', color: 'white'}}>Currently not active on social media</Typography>
                     <GitHub className={classes.icon} />
-                    <LinkedIn className={classes.icon}  onClick = {popup}/>
-                    <Instagram className={classes.icon}  onClick = {popup}/>
-                    <Twitter className={classes.icon}  onClick = {popup}/>
+                    <LinkedIn className={classes.icon} />
+                    <Instagram className={classes.icon} />
+                    <Twitter className={classes.icon} />
                 </div>
 
             </div>
