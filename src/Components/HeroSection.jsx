@@ -218,7 +218,6 @@ const classes = useStyles()
                     <span className={classes.menuItem}>Graphic Designer</span>
                 </div>
                 <div className={classes.social}>
-                <Typography variant='body1'className={classes.p} id = 'popuphero' style={{display: 'none', transition: 'all ease-in-out .2s', color: 'white'}}>Currently not active on social media</Typography>
                     <GitHub className={classes.icon} />
                     <LinkedIn className={classes.icon} />
                     <Instagram className={classes.icon} />
