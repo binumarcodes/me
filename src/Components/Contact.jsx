@@ -1,6 +1,7 @@
 import { Button, Container, IconButton, makeStyles, Typography } from '@material-ui/core'
 import { SendOutlined, WhatsApp, FileCopy, ArrowUpward, ArrowUpwardSharp, ArrowUpwardOutlined } from '@material-ui/icons'
 import React from 'react'
+import ReactTyped from 'react-typed'
 
 const useStyles = makeStyles((theme)=>({
     section:{
@@ -98,7 +99,7 @@ const classes = useStyles()
     <section className={classes.section}>
         <Container className = {classes.container}>
             <Typography variant='h6' className={classes.h6}>Contact Me</Typography>
-            <Typography variant='h1'className={classes.h1}>Let's Talk!</Typography>
+            <Typography variant='h1'className={classes.h1}>Let's {<ReactTyped strings={['Chat!', 'Talk!', 'Build!']} typeSpeed = {100} backSpeed = {100} loop/>}</Typography>
             <div className={classes.Contact}>
                 <Button variant='outlined'className={classes.whatsAppBtn} startIcon = {<WhatsApp/>} style = {{borderRadius:'1rem'}}> <a href = 'https://wa.me/2348163089308' target= '_blank' className={classes.link}>LETS HAVE A CONVERSATION</a></Button>
                 <div className={classes.email}  onClick = {copyText}>
