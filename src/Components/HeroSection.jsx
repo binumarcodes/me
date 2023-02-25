@@ -1,6 +1,7 @@
 import { Typography, makeStyles, Container, List, ListItem, Button, Icon, IconButton, Card, CardActionArea, CardMedia, CardContent, Grid } from '@material-ui/core'
 import { CloudDownloadOutlined, GitHub, Instagram, LinkedIn, Twitter, WhatsApp  } from '@material-ui/icons'
 import React, { useEffect, useState } from 'react'
+import ReactTyped from 'react-typed'
 import AboutMe from './AboutMe'
 
 const useStyles = makeStyles((theme)=>({
@@ -210,7 +211,7 @@ const classes = useStyles()
         <Container className={classes.HeroSection}>
             <div className={classes.brief}>
                 <Typography variant='h6'className={classes.h6} style = {{display:'flex', alignItems:'center'}}> Greetings!<span style = {{height:'3rem'}}><img src="Images/wave.png"  style = {{height:'3rem', paddingLeft:'.5rem'}}alt="" srcset="" /></span></Typography>
-                <Typography variant='h1'className={classes.h1}> Ibrahim Aliyu</Typography>
+                <Typography variant='h1'className={classes.h1}>{<ReactTyped strings={['Ibrahim', 'Ibro', 'Iro', 'Ibrahim']}  backSpeed={80} typeSpeed={50}/>} Aliyu</Typography>
                 <div className={classes.track}>
                     <span className={classes.menuItem}>Front-End Developer</span>
                     <span className={classes.dot}></span>
