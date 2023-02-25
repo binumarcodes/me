@@ -86,7 +86,7 @@ const useStyles = makeStyles((theme)=>({
 function Contact() {
 const copyText = () =>{
     let toBeCopied = document.querySelector('#email').innerHTML;
-    let popup = document.getElementById("popup");
+    let popup = document.getElementById("show");
     (navigator.clipboard.writeText(toBeCopied));
     popup.style.display = 'block'
     setTimeout(()=>{
@@ -101,10 +101,10 @@ const classes = useStyles()
             <Typography variant='h1'className={classes.h1}>Let's Talk!</Typography>
             <div className={classes.Contact}>
                 <Button variant='outlined'className={classes.whatsAppBtn} startIcon = {<WhatsApp/>} style = {{borderRadius:'1rem'}}> <a href = 'https://wa.me/2348163089308' target= '_blank' className={classes.link}>LETS HAVE A CONVERSATION</a></Button>
-                <div className={classes.email}>
-                    <Typography variant='body1'className={classes.p} id = 'popup' style={{display: 'none', transition: 'all ease-in-out .2s'}}>copied!</Typography>
+                <div className={classes.email}  onClick = {copyText}>
+                    <Typography variant='body1'className={classes.p} id = 'show' style={{display: 'none', transition: 'all ease-in-out .2s'}}>copied!</Typography>
                     <SendOutlined className={classes.icon}/>
-                    <Typography variant='body1'className={classes.p} id = 'email'  onClick = {copyText}>i.aliyu019@gmail.com</Typography>
+                    <Typography variant='body1'className={classes.p} id = 'email' >i.aliyu019@gmail.com</Typography>
                     <FileCopy/>
                 </div>
 
