@@ -295,7 +295,7 @@ const classes = useStyles()
                                         </Grid>
                                         <Grid item md = {3}>
                                             <Typography variant='body1' style={{color:'#7B4AE2'}} className={classes.p}>A Free Lance Designer</Typography>
-                                            <Typography variant='h2' style={{color:'#7B4AE2'}} className={classes.h2}> GRAPHICS</Typography>
+                                            <Typography variant='h2' style={{color:'#7B4AE2'}} className={classes.h2}> Graphics</Typography>
 
                                         </Grid>
                                     </Grid>
