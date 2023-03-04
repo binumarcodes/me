@@ -3,7 +3,7 @@ import { CloudDownloadOutlined, GitHub, Instagram, LinkedIn, Twitter, WhatsApp  
 import React, { useEffect, useState } from 'react'
 import ReactTyped from 'react-typed'
 import AboutMe from './AboutMe'
-
+    
 const useStyles = makeStyles((theme)=>({
     body:{
         paddingTop:'10rem',
@@ -21,6 +21,11 @@ const useStyles = makeStyles((theme)=>({
         justifyContent: 'space-between',
         alignItems: 'center',
         [theme.breakpoints.down('xs')]: {
+            position: 'relative',
+            display: 'flex',
+            flexDirection: 'column-reverse'
+    },
+        [theme.breakpoints.down('sm')]: {
             position: 'relative',
             display: 'flex',
             flexDirection: 'column-reverse'
@@ -140,6 +145,9 @@ const useStyles = makeStyles((theme)=>({
         [theme.breakpoints.down('sm')]: {
             width: '90vw'
     },
+        [theme.breakpoints.down('md')]: {
+            width: '100%'
+    },
 
     },
     SectionContainer:{
@@ -227,7 +235,7 @@ const classes = useStyles()
 
             </div>
             <div className={classes.memoji}>
-            <img src = 'Images/memoji.png' className={classes.image} alt="" srcset="" />
+            <img src = '../build' className={classes.image} alt="" srcset="" />
 
             </div>
             <div className={classes.downloadCv}>

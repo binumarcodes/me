@@ -171,7 +171,7 @@ return (
 
                     {projects.map((project)=>{
                         return(
-                            <Grid item md = {3} sm = {12} xs = {12}>
+                            <Grid item md = {3} sm = {6} xs = {12}>
                                 <a href={project.link} target = '_blank' className = {classes.link}>
                                     
                                     <Card className={classes.ProjectCard}>
