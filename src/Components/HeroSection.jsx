@@ -235,7 +235,7 @@ const classes = useStyles()
 
             </div>
             <div className={classes.memoji}>
-            <img src = '../build' className={classes.image} alt="" srcset="" />
+            <img src = 'Images/memoji.png' className={classes.image} alt="" srcset="" />
 
             </div>
             <div className={classes.downloadCv}>
