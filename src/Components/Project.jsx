@@ -179,7 +179,7 @@ function Project() {
     },
   ];
   return (
-    <body className={classes.body}>
+    <body className={classes.body} id="projects">
       <Container>
         <Grid container className={classes.GridContainer}>
           <Grid item>
