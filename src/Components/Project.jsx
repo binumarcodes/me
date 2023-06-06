@@ -161,6 +161,22 @@ function Project() {
       link: "https://klass-naut.vercel.app/",
       technologyused: ["REACTJS", "MATERIAL-Ui"],
     },
+    {
+      name: "HostSpace",
+      description:
+        "HostSpace is a DevOps consulting company that aims to  streamline your development process and empowering your teams with DevOps as a service solutions.",
+      image: "Images/hostspace-shot.png",
+      link: "https://hostspaceng.com/",
+      technologyused: ["REACTJS", "MATERIAL-Ui"],
+    },
+    {
+      name: "OneCenter",
+      description:
+        "OneCenter is the future of customer service. With advanced technology and a customer-centric approach, OneCenter is transfroming call centers into seamless, personalized interactions that prioritize your needs.",
+      image: "Images/onecenter-shot.png",
+      link: "https://onecenter.ai/",
+      technologyused: ["REACTJS", "MATERIAL-Ui"],
+    },
   ];
   return (
     <body className={classes.body}>
