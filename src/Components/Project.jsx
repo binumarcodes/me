@@ -172,7 +172,7 @@ function Project() {
     {
       name: "OneCenter",
       description:
-        "OneCenter is the future of customer service. With advanced technology and a customer-centric approach, OneCenter is transfroming call centers into seamless, personalized interactions that prioritize your needs.",
+        "With advanced AI technology and a customer-centric approach, OneCenter is transfroming call centers into seamless, personalized interactions that prioritize the needs of every organisation & their customers.",
       image: "Images/onecenter-shot.png",
       link: "https://onecenter.ai/",
       technologyused: ["REACTJS", "MATERIAL-Ui"],
