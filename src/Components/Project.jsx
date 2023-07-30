@@ -1,16 +1,8 @@
-import {
-  Button,
-  Card,
-  CardContent,
-  CardHeader,
-  Container,
-  Grid,
-  makeStyles,
-  Typography,
-} from "@material-ui/core";
+import { Button, Card, CardContent, CardHeader, Container, Grid, makeStyles, Typography } from "@material-ui/core";
 import { BorderColor } from "@material-ui/icons";
 import data from "./Data/ProjectData";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const useStyles = makeStyles((theme) => ({
   body: {
@@ -122,73 +114,98 @@ function Project() {
   const classes = useStyles();
   const projects = [
     {
+      id: 1,
       name: "schoola.app",
       description:
         "Schoola is a gamified learning application for K12 schools. Students are encouraged to learn through game-like features like points, ranks, tournaments, and duels. Students can participate in tournaments and win amazing prizes",
-      image: "Images/schoola-shot.png",
+      image: "http://ibrvheem.github.io/portfolio/Images/schoola-shot.png",
       link: "https://www.schoola.app",
       technologyused: ["HTML", "CSS"],
     },
     {
+      id: 2,
       name: "primetech-solutions.com",
       description:
         "PrimeTech is a design and engineering company with inherited experience, working in Nigeria for over decades. It provides reliable, innovative and efficient solutions for the construction of buildings, industries, civil structures, bridges, roads and infrastructure.",
-      image: "Images/primetech-shot.png",
+      image: "http://ibrvheem.github.io/portfolio/Images/primetech-shot.png",
       link: "https://primetech-solutions.com",
       technologyused: ["REACTJS", "CSS"],
     },
     {
+      id: 3,
       name: "itcentral.ng",
       description:
         "IT Central is a Tech Company that is passionate about software development and training the next generation of tech leaders. They specialize in building innovative software solutions and comprehensive training programs for businesses and developers.",
-      image: "Images/itcentral-shot.png",
+      image: "http://ibrvheem.github.io/portfolio/Images/itcentral-shot.png",
       link: "https://itcentral.ng/",
       technologyused: ["REACTJS", "MATERIAL-Ui"],
     },
     {
+      id: 4,
       name: "Keepin' it real",
       description:
         "Keepin' it real is a personal project that i am building. Basically it is a to-do list web app that is built to be very easy to use and minamalistic. it has color coded cards to show the level of urgency. This project was/is being built with ReactJS and Material-Ui",
-      image: "Images/keepinitreal-shot.png",
+      image: "http://ibrvheem.github.io/portfolio/Images/keepinitreal-shot.png",
       link: "https://ibrvheem.github.io/Keepinitreal/",
       technologyused: ["REACTJS", "MATERIAL-Ui"],
     },
     {
+      id: 5,
       name: "KlassNaut",
-      description:
-        "KlassNaut cutting-edge AI-powered note generator. It is designed to streamline the note-taking process for teachers, making it more efficient and effective.",
-      image: "Images/klassNaut-shot.png",
+      description: "KlassNaut cutting-edge AI-powered note generator. It is designed to streamline the note-taking process for teachers, making it more efficient and effective.",
+      image: "http://ibrvheem.github.io/portfolio/Images/klassNaut-shot.png",
       link: "https://klass-naut.vercel.app/",
       technologyused: ["REACTJS", "MATERIAL-Ui"],
     },
     {
+      id: 6,
       name: "HostSpace",
-      description:
-        "HostSpace is a DevOps consulting company that aims to  streamline your development process and empowering your teams with DevOps as a service solutions.",
-      image: "Images/hostspace-shot.png",
+      description: "HostSpace is a DevOps consulting company that aims to  streamline your development process and empowering your teams with DevOps as a service solutions.",
+      image: "http://ibrvheem.github.io/portfolio/Images/hostspace-shot.png",
       link: "https://hostspaceng.com/",
       technologyused: ["REACTJS", "MATERIAL-Ui"],
     },
     {
+      id: 7,
       name: "OneCenter",
       description:
         "With advanced AI technology and a customer-centric approach, OneCenter is transfroming call centers into seamless, personalized interactions that prioritize the needs of every organisation & their customers.",
-      image: "Images/onecenter-shot.png",
+      image: "http://ibrvheem.github.io/portfolio/Images/onecenter-shot.png",
       link: "https://onecenter.ai/",
       technologyused: ["REACTJS", "MATERIAL-Ui"],
     },
   ];
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0,
+        staggerChildren: 0.2,
+        ease: "linear",
+      },
+    },
+  };
+
+  const item = (id) => ({
+    hidden: { y: 40, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.2 * id,
+        ease: "linear",
+      },
+    },
+  });
   return (
     <body className={classes.body} id="projects">
       <Container>
         <Grid container className={classes.GridContainer}>
           <Grid item>
             <div className={classes.brief}>
-              <Typography
-                variant="h6"
-                className={classes.h6}
-                style={{ display: "flex", alignItems: "center" }}
-              >
+              <Typography variant="h6" className={classes.h6} style={{ display: "flex", alignItems: "center" }}>
                 Portfolio!
                 <span>
                   <img
@@ -236,18 +253,10 @@ function Project() {
 
                     <CardContent>
                       <div className={classes.TechUsed}>
-                        <Typography
-                          variant="h6"
-                          className={classes.h6}
-                          style={{ display: "flex", alignItems: "center" }}
-                        >
+                        <Typography variant="h6" className={classes.h6} style={{ display: "flex", alignItems: "center" }}>
                           {project.technologyused.at(0)}
                         </Typography>
-                        <Typography
-                          variant="h6"
-                          className={classes.h6}
-                          style={{ display: "flex", alignItems: "center" }}
-                        >
+                        <Typography variant="h6" className={classes.h6} style={{ display: "flex", alignItems: "center" }}>
                           {project.technologyused.at(1)}
                         </Typography>
                       </div>
@@ -256,11 +265,7 @@ function Project() {
                           {project.name}
                         </Typography>
 
-                        <img
-                          src={project.image}
-                          className={classes.ProjectImage}
-                          alt=""
-                        />
+                        <motion.img variants={item(project.id)} initial="hidden" whileInView="visible" src={project.image} className={classes.ProjectImage} alt="" />
                       </Container>
                     </CardContent>
                   </Card>

@@ -1,12 +1,4 @@
-import {
-  AppBar,
-  Container,
-  List,
-  ListItem,
-  makeStyles,
-  Toolbar,
-  Typography,
-} from "@material-ui/core";
+import { AppBar, Container, List, ListItem, makeStyles, Toolbar, Typography } from "@material-ui/core";
 import { hover } from "@testing-library/user-event/dist/hover";
 // import Logo from '../../publicImages/Logo.svg'
 import React from "react";
@@ -68,7 +60,7 @@ function Navbar() {
       <Container>
         <Toolbar className={classes.navbar}>
           <div className={classes.logo}>
-            <img src="Images/Logo.svg" alt="" srcset="" />
+            <img src="http://ibrvheem.github.io/portfolio/Images/Logo.svg" alt="" srcset="" />
           </div>
           <List className={classes.menu}>
             <ListItem className={classes.menuItem}>
