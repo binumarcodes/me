@@ -8,6 +8,7 @@ import Technology from "./Components/Technology";
 import Career from "./Components/Career";
 import Contact from "./Components/Contact";
 import ReactGA from "react-ga";
+import { useEffect } from "react";
 
 const theme = createMuiTheme({
   palette: {
@@ -29,10 +30,11 @@ const theme = createMuiTheme({
 });
 const TRACKING_ID = "G-V730R3HMHD";
 ReactGA.initialize(TRACKING_ID);
-useEffect(() => {
-  ReactGA.pageview(window.location.pathname);
-}, []);
 function App() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
@@ -47,5 +49,4 @@ function App() {
     </ThemeProvider>
   );
 }
-z;
 export default App;
