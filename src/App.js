@@ -28,13 +28,7 @@ const theme = createMuiTheme({
     fontFamily: "Raleway",
   },
 });
-const TRACKING_ID = "G-6DHTZN41XF";
-ReactGA.initialize(TRACKING_ID);
 function App() {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }, []);
-
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
