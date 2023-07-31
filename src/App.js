@@ -28,7 +28,7 @@ const theme = createMuiTheme({
     fontFamily: "Raleway",
   },
 });
-const TRACKING_ID = "G-PXM1YWK91R";
+const TRACKING_ID = "G-6DHTZN41XF";
 ReactGA.initialize(TRACKING_ID);
 function App() {
   useEffect(() => {
