@@ -184,7 +184,7 @@ function HeroSection() {
             {" "}
             Greetings!
             <span style={{ height: "3rem" }}>
-              <img src="http://ibrvheem.github.io/portfolio/Images/wave.png" style={{ height: "3rem", paddingLeft: ".5rem" }} alt="" srcset="" />
+              <img src="https://ibrvheem.github.io/portfolio/Images/wave.png" style={{ height: "3rem", paddingLeft: ".5rem" }} alt="" srcset="" />
             </span>
           </Typography>
           <Typography variant="h1" className={classes.h1}>
@@ -208,7 +208,7 @@ function HeroSection() {
           </div>
         </div>
         <div className={classes.memoji}>
-          <img src="http://ibrvheem.github.io/portfolio/Images/memoji.png" className={classes.image} alt="" srcset="" />
+          <img src="https://ibrvheem.github.io/portfolio/Images/memoji.png" className={classes.image} alt="" srcset="" />
         </div>
         <div className={classes.downloadCv}>
           <Button variant="text" className={classes.p} color="primary" endIcon={<CloudDownloadOutlined />}>
@@ -231,7 +231,7 @@ function HeroSection() {
             <Grid item md={3} sm={6} xs={10}>
               <Card className={classes.card}>
                 <CardActionArea>
-                  <img src="http://ibrvheem.github.io/portfolio/Images/CodeIcon.svg" alt="" srcset="" />
+                  <img src="https://ibrvheem.github.io/portfolio/Images/CodeIcon.svg" alt="" srcset="" />
                   <CardContent>
                     <Typography variant="body1" className={classes.p} color="primary">
                       2 Years Experience
@@ -246,7 +246,7 @@ function HeroSection() {
             <Grid item md={3} sm={6} xs={10}>
               <Card className={classes.card}>
                 <CardActionArea>
-                  <img src="http://ibrvheem.github.io/portfolio/Images/DesignIcon.svg" alt="" srcset="" />
+                  <img src="https://ibrvheem.github.io/portfolio/Images/DesignIcon.svg" alt="" srcset="" />
                   <CardContent>
                     <Typography variant="body1" className={classes.p} color="primary">
                       1/2 Years Experience
@@ -261,7 +261,7 @@ function HeroSection() {
             <Grid item md={3} sm={6} xs={10}>
               <Card className={classes.card}>
                 <CardActionArea>
-                  <img src="http://ibrvheem.github.io/portfolio/Images/ProjectsIcon.svg" alt="" srcset="" />
+                  <img src="https://ibrvheem.github.io/portfolio/Images/ProjectsIcon.svg" alt="" srcset="" />
                   <CardContent>
                     <Typography variant="body1" className={classes.p} color="primary">
                       1 Year Experience

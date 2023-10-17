@@ -108,7 +108,7 @@ function Career() {
       <Typography variant="h6" className={classes.h6} style={{ margin: "auto", display: "flex", alignItems: "center" }}>
         Career!
         <span>
-          <img src="http://ibrvheem.github.io/portfolio/Images/technologist.png" style={{ height: "3rem", paddingLeft: ".5rem" }} alt="" srcset="" />
+          <img src="https://ibrvheem.github.io/portfolio/Images/technologist.png" style={{ height: "3rem", paddingLeft: ".5rem" }} alt="" srcset="" />
         </span>
       </Typography>
       <Typography variant="h1" className={classes.h1}>
