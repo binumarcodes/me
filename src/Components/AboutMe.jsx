@@ -93,7 +93,7 @@ function AboutMe() {
         <Grid container md={12}>
           <Grid item sm={10}>
             <div className={classes.memeoji}>
-              <img src="http://ibrvheem.github.io/portfolio/Images/memoji2.png" className={classes.image} alt="" srcset="" />
+              <img src="https://ibrvheem.github.io/portfolio/Images/memoji2.png" className={classes.image} alt="" srcset="" />
             </div>
           </Grid>
         </Grid>
@@ -104,7 +104,7 @@ function AboutMe() {
                 {" "}
                 About Me!
                 <span style={{ height: "3rem" }}>
-                  <img src="http://ibrvheem.github.io/portfolio/Images/memoji2 1.png" style={{ height: "3rem", paddingLeft: ".5rem" }} alt="" srcset="" />
+                  <img src="https://ibrvheem.github.io/portfolio/Images/memoji2 1.png" style={{ height: "3rem", paddingLeft: ".5rem" }} alt="" srcset="" />
                 </span>
               </Typography>
               <Typography variant="h1" className={classes.h1}>
@@ -115,32 +115,32 @@ function AboutMe() {
                 <ListItem className={classes.ListItem}>
                   {" "}
                   <span style={{ height: "30px" }}>
-                    <img src="http://ibrvheem.github.io/portfolio/Images/wave.png" style={{ height: "3rem", paddingRight: ".5rem" }} alt="" srcset="" />
+                    <img src="https://ibrvheem.github.io/portfolio/Images/wave.png" style={{ height: "3rem", paddingRight: ".5rem" }} alt="" srcset="" />
                   </span>{" "}
                   My name is Ibrahim Aliyu, but you can call me just 'Iro' or 'Ibro'. Nice to meet you!
                 </ListItem>
                 <ListItem className={classes.ListItem}>
                   {" "}
                   <span style={{ height: "30px" }}>
-                    <img src="http://ibrvheem.github.io/portfolio/Images/technologist.png" style={{ height: "3rem", paddingRight: ".5rem" }} alt="" srcset="" />
+                    <img src="https://ibrvheem.github.io/portfolio/Images/technologist.png" style={{ height: "3rem", paddingRight: ".5rem" }} alt="" srcset="" />
                   </span>
                   With more than 2 years of experience, I have developed and programmed interfaces using JavaScript, React JS, CSS, and Material-Ui.
                 </ListItem>
                 <ListItem className={classes.ListItem}>
                   <span style={{ height: "30px" }}>
-                    <img src="http://ibrvheem.github.io/portfolio/Images/graduation-cap.png" style={{ height: "3rem", paddingRight: ".5rem" }} alt="" srcset="" />
+                    <img src="https://ibrvheem.github.io/portfolio/Images/graduation-cap.png" style={{ height: "3rem", paddingRight: ".5rem" }} alt="" srcset="" />
                   </span>{" "}
                   I am currently enrolled in Bayero University, Kano, Nigeria, studying Information Technology.
                 </ListItem>
                 <ListItem className={classes.ListItem}>
                   <span style={{ height: "30px" }}>
-                    <img src="http://ibrvheem.github.io/portfolio/Images/interest.png" style={{ height: "3rem", paddingRight: ".5rem" }} alt="" srcset="" />
+                    <img src="https://ibrvheem.github.io/portfolio/Images/interest.png" style={{ height: "3rem", paddingRight: ".5rem" }} alt="" srcset="" />
                   </span>
                   I'm interested in front-end development with React JS and Material-Ui, and I also dabble in graphic design.
                 </ListItem>
                 <ListItem className={classes.ListItem}>
                   <span style={{ height: "30px" }}>
-                    <img src="http://ibrvheem.github.io/portfolio/Images/light-bulb.png" style={{ height: "3rem", paddingRight: ".5rem" }} alt="" srcset="" />
+                    <img src="https://ibrvheem.github.io/portfolio/Images/light-bulb.png" style={{ height: "3rem", paddingRight: ".5rem" }} alt="" srcset="" />
                   </span>{" "}
                   Trying to be a little better than yesterday every day.
                 </ListItem>

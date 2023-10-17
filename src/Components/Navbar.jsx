@@ -60,7 +60,7 @@ function Navbar() {
       <Container>
         <Toolbar className={classes.navbar}>
           <div className={classes.logo}>
-            <img src="http://ibrvheem.github.io/portfolio/Images/Logo.svg" alt="" srcset="" />
+            <img src="https://ibrvheem.github.io/portfolio/Images/Logo.svg" alt="" srcset="" />
           </div>
           <List className={classes.menu}>
             <ListItem className={classes.menuItem}>
