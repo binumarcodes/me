@@ -88,16 +88,16 @@ const Professional = [
 ];
 const academic = [
   {
-    header: "Bayero University Kano",
-    subheader: "I am currently pursuing a major in Information Technology at Bayero University Kano's Faculty of Computing.",
+    header: "Kaduna State University (KASU)",
+    subheader: "I am currently pursuing a major in English Studies at Kaduna State Univeristy (KASU), Faculty of Art.",
     Duration: "4 Years",
-    timeframe: "September 2018 - Date",
+    timeframe: "January 2021 - Date",
   },
   {
-    header: "Future Leaders International School",
-    subheader: "I graduated high-school from future leaders international school. I'd like to think i was a good student. atleast above average. haha!",
-    Duration: "5 Years",
-    timeframe: "September 2013 - August 2018",
+    header: "Zabib College",
+    subheader: "I graduated high-school from Zabib College. I'd like to think i was a good student. atleast above average. haha!",
+    Duration: "6 Years",
+    timeframe: "Febuary 2015 - Octorber 2021",
   },
 ];
 
