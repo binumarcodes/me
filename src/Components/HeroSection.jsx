@@ -188,7 +188,7 @@ function HeroSection() {
             </span>
           </Typography>
           <Typography variant="h1" className={classes.h1}>
-            {<ReactTyped strings={["Ibrahim", "Ibro", "Iro", "Ibrahim"]} backSpeed={80} typeSpeed={50} />} Aliyu
+            {<ReactTyped strings={["Abdulrahman", "Abdul", "Abdulrahman"]} backSpeed={80} typeSpeed={50} />} Bin Umar
           </Typography>
           <div className={classes.track}>
             <span className={classes.menuItem}>Front-End Developer</span>
@@ -197,10 +197,10 @@ function HeroSection() {
             <Typography variant="body1" className={classes.p} id="popup" color="primary" style={{ display: "none", transition: "all ease-in-out .2s", padding: "0.5rem 0rem", fontSize: "1rem" }}>
               Sorry, I am currently not active on socials!
             </Typography>
-            <a href="https://github.com/Ibrvheem" target="_blank">
+            <a href="https://github.com/binumarcodes" target="_blank">
               <GitHub className={classes.icon} />
             </a>
-            <a href="https://www.linkedin.com/in/ibrahim-aliyu-96209a225/" target="_blank">
+            <a href="https://www.linkedin.com/in/abdulrahman-bin-umar-7126b7234/" target="_blank">
               <LinkedIn className={classes.icon} />
             </a>
             <Instagram className={classes.icon} onClick={popup} />
@@ -212,14 +212,14 @@ function HeroSection() {
         </div>
         <div className={classes.downloadCv}>
           <Button variant="text" className={classes.p} color="primary" endIcon={<CloudDownloadOutlined />}>
-            <a href="https://docs.google.com/document/d/1TBuERb0co-Q2mjCRiWKKwaiP0mP-xzM2-J_n3iO9mh0/edit?usp=sharing" className={classes.link} target="_blank">
+            <a href="https://1drv.ms/w/c/b662312247ce4c40/EXh4iw7x4fFCk4vH6kuzZkUBL_Ibg0dx69h7RwkF3LJWGA?e=OCCJG0" className={classes.link} target="_blank">
               {" "}
               Download CV
             </a>
           </Button>
           <Button variant="outlined" className={classes.whatsAppBtn} startIcon={<WhatsApp />} style={{ borderRadius: "1rem" }}>
             {" "}
-            <a href="https://wa.me/2348163089308" target="_blank" className={classes.link}>
+            <a href="https://wa.me/2348108005192" target="_blank" className={classes.link}>
               LETS HAVE A CONVERSATION
             </a>
           </Button>

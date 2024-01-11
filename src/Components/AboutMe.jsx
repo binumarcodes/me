@@ -109,7 +109,7 @@ function AboutMe() {
               </Typography>
               <Typography variant="h1" className={classes.h1}>
                 {" "}
-                Ibrahim Aliyu
+                Abdulrahman Bin Umar
               </Typography>
               <List>
                 <ListItem className={classes.ListItem}>
@@ -117,20 +117,20 @@ function AboutMe() {
                   <span style={{ height: "30px" }}>
                     <img src="https://ibrvheem.github.io/portfolio/Images/wave.png" style={{ height: "3rem", paddingRight: ".5rem" }} alt="" srcset="" />
                   </span>{" "}
-                  My name is Ibrahim Aliyu, but you can call me just 'Iro' or 'Ibro'. Nice to meet you!
+                  My name is Abdulrahman Bin Umar, but you can call me just 'Abdul' or 'Bin Umar'. Nice to meet you!
                 </ListItem>
                 <ListItem className={classes.ListItem}>
                   {" "}
                   <span style={{ height: "30px" }}>
                     <img src="https://ibrvheem.github.io/portfolio/Images/technologist.png" style={{ height: "3rem", paddingRight: ".5rem" }} alt="" srcset="" />
                   </span>
-                  With more than 2 years of experience, I have developed and programmed interfaces using JavaScript, React JS, CSS, and Material-Ui.
+                  With more than 2 years of experience, I have developed and programmed interfaces using JavaScript, React JS, React Native, CSS, and Material-Ui.
                 </ListItem>
                 <ListItem className={classes.ListItem}>
                   <span style={{ height: "30px" }}>
                     <img src="https://ibrvheem.github.io/portfolio/Images/graduation-cap.png" style={{ height: "3rem", paddingRight: ".5rem" }} alt="" srcset="" />
                   </span>{" "}
-                  I am currently enrolled in Bayero University, Kano, Nigeria, studying Information Technology.
+                  I am currently enrolled in Kaduna State University (KASU), Kaduna, Nigeria, studying English Studies.
                 </ListItem>
                 <ListItem className={classes.ListItem}>
                   <span style={{ height: "30px" }}>
