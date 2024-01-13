@@ -219,7 +219,7 @@ function HeroSection() {
           </Button>
           <Button variant="outlined" className={classes.whatsAppBtn} startIcon={<WhatsApp />} style={{ borderRadius: "1rem" }}>
             {" "}
-            <a href="https://wa.me/2348108005192" target="_blank" className={classes.link}>
+            <a href="https://wa.me/2347040497869" target="_blank" className={classes.link}>
               LETS HAVE A CONVERSATION
             </a>
           </Button>
